@@ -1,0 +1,224 @@
+@import "pxTOvw";
+@import "jquery.fancybox.min";
+@import "all-page";
+@import "animate";
+
+h2 {
+  font-size: $a55;
+  font-family: 'VantaBold';
+  text-align: center;
+}
+
+main {
+  background: #f4f2e6;
+  padding-top: $a100;
+  h2 {
+    padding-bottom: $a100;
+  }
+  .contact {
+    position: relative;
+    z-index: 1;
+    .bg {
+      position: absolute;
+      top: -$a80;
+      left: $a200;
+      width: $a550;
+      z-index: -1;
+    }
+    .bg2 {
+      position: absolute;
+      right: $a400;
+      top: $a180;
+      width: $a200;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-size: $a16;
+        font-family: 'VantaPlain-Light';
+        line-height: $a25;
+        display: flex;
+        flex-direction: column;
+        span {
+          padding-bottom: $a20;
+        }
+      }
+      .social {
+        .links {
+          display: flex;
+          padding-top: $a20;
+          a {
+            width: $a50;
+            height: $a50;
+            background: #333333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: $a10;
+            transition: all 0.5s;
+            &:hover {
+              transform: scale(1.1);
+            }
+            img {
+              height: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .address {
+    padding: $a80 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      h3 {
+        font-size: $a37;
+        font-family: 'VantaPlain';
+        padding-bottom: $a50;
+      }
+      .button-holder {
+        display: flex;
+        .button {
+          height: $a70;
+          width: $a150;
+          &:nth-of-type(1) {
+            border-right-width: $a3;
+            background: $osn-col;
+          }
+          &:nth-of-type(2) {
+            background: $osn-col2;
+            border-left-width: $a3;
+          }
+        }
+      }
+      .address-holder {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: $a30;
+        margin-top: $a20;
+        address {
+          font-family: 'VantaPlain-Light';
+          font-style: normal;
+          white-space: pre-line;
+          font-size: $a16;
+          &:nth-of-type(2) {
+            text-align: right;
+            padding-right: $a350;
+          }
+        }
+      }
+      .map-holder {
+        display: flex;
+        width: 100%;
+        padding-bottom: $a30;
+        position: relative;
+        z-index: 1;
+        .bg {
+          position: absolute;
+          top: -$a150;
+          right: -$a200;
+          width: $a1800;
+          z-index: -1;
+        }
+        .bg2 {
+          position: absolute;
+          bottom: calc(100% - #{$a20});
+          right: $a20;
+        }
+        .map {
+          width: 50%;
+          height: $a400;
+          background: #ede9d5;
+          &:nth-of-type(2) {
+            background: #e5e0c5;
+          }
+        }
+      }
+      p {
+        font-size: $a28;
+        line-height: $a30;
+        text-align: center;
+        padding-bottom: $a60;
+      }
+      .button {
+        background: $osn-col;
+        img {
+          position: absolute;
+          z-index: -1;
+          width: $a1000;
+          bottom: -$a70;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        &:hover {
+          background: $osn-col2 !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 1200px){
+  main {
+    .address {
+      padding: $m20 0;
+      .container {
+        .button-holder {
+          padding-bottom: $m10;
+          .button {
+            width: $m65 !important;
+            height: $m25 !important;
+          }
+        }
+        .address-holder {
+          flex-direction: column;
+          address {
+            font-size: $m10;
+            padding-bottom: $m10;
+          }
+        }
+        .map-holder {
+          margin-bottom: $m20;
+          flex-direction: column;
+          .map {
+            height: $m200;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  main .contact .container {
+    flex-direction: column;
+    p {
+      display: flex;
+      padding-bottom: $m10;
+      span {
+        white-space: pre-line;
+      }
+    }
+  }
+  main .contact .bg2, main .address .container .map-holder .bg2 {
+    display: none;
+  }
+  main .contact .container .social .links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: $m10;
+    a {
+      width: $m40;
+      height: $m40;
+    }
+  }
+  main .address .container .button img {
+    width: 100%;
+  }
+}

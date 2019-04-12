@@ -1,0 +1,95 @@
+@import "pxTOvw";
+@import "jquery.fancybox.min";
+@import "all-page";
+@import "animate";
+
+h3 {
+  font-size: $a40;
+  line-height: $a40;
+  font-family: 'VantaBold';
+  text-align: center;
+  white-space: pre-line;
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  background: #f4f2e6;
+  padding: $a150 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: $a200 !important;
+    color: $osn-col;
+    padding-bottom: $a50;
+    font-family: 'VantaPlain';
+  }
+  img {
+    width: $a220;
+  }
+  .item {
+    width: $a600;
+    height: $a300;
+    border-radius: $a15;
+    background: #ffffff;
+    margin-top: -$a20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .bg {
+      position: absolute;
+      width: $a950;
+      top: -$a250;
+      z-index: -1;
+    }
+    .bg2 {
+      top: -$a50;
+      right: -$a120;
+      position: absolute;
+      width: $a300;
+    }
+    p {
+      color: #86776f;
+      line-height: $a20;
+      padding-top: $a50;
+    }
+    .button {
+      width: 90%;
+      background: $osn-col2;
+      margin: 0 auto;
+      height: $a80;
+      margin-top: auto;
+      margin-bottom: -$a45;
+      font-size: $a30;
+    }
+  }
+}
+
+@media screen  and (max-width: 1200px){
+  body {
+    background: #f4f2e6;
+  }
+  main {
+    h2 {
+      font-size: $m80 !important;
+    }
+    img {
+      width: $m100;
+    }
+    .item {
+      width: 70%;
+      padding: 0 $m20;
+      height: auto;
+      padding-top: $m10;
+      .bg2 {
+        z-index: -1;
+      }
+      .button {
+        margin-top: $m20;
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+@import "pxTOvw";
+@import "jquery.fancybox.min";
+@import "all-page";
+@import "animate";
+@import "slick";
+@import "slick-theme";
+
+h3 {
+  font-size: $a40;
+  line-height: $a40;
+  font-family: 'VantaBold';
+  text-align: center;
+  white-space: pre-line;
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  .reviews {
+    padding-top: $a100;
+    padding-bottom: $a300;
+    background: #f4f2e6;
+    box-shadow: 1px 0 2px #ccc;
+    position: relative;
+    .bg1 {
+      position: absolute;
+      left: 0;
+      bottom: $a200;
+      width: $a200;
+    }
+    .bg2 {
+      position: absolute;
+      top: $a100;
+      left: $a300;
+      width: $a220;
+    }
+    .bg3 {
+      position: absolute;
+      left: 0;
+      right: $a500;
+      bottom: 0;
+      top: $a150;
+      margin: auto;
+      width: $a800;
+    }
+    .bg4 {
+      position: absolute;
+      width: $a500;
+      bottom: 0;
+      top: $a120;
+      margin: auto;
+      right: $a250;
+    }
+    .bg5 {
+      position: absolute;
+      right: 0;
+      top: $a150;
+      width: $a180;
+    }
+    h2 {
+      padding-bottom: $a150;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      .item {
+        position: relative;
+        z-index: 1;
+        img {
+          width: $a280;
+        }
+        .shadow {
+          position: absolute;
+          top: -3%;
+          left: -4%;
+          z-index: -1;
+          width: 108%;
+          height: 105%;
+          background: rgba(0,0,0,0.8);
+          transform: rotate(-2deg);
+        }
+      }
+    }
+  }
+  .famous {
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 100%, rgba(0,0,0,0.7) 0), url(../img/famous/bg.png);
+    background-size: auto 100%;
+    padding-top: $a100;
+    padding-bottom: $a100;
+    position: relative;
+    .bg4 {
+      position: absolute;
+      bottom: $a100;
+      left: $a250;
+      width: $a250;
+    }
+    .bg6 {
+      position: absolute;
+      bottom: $a50;
+      right: $a250;
+      width: $a250;
+    }
+    h3 {
+      color: #f4f2e6;
+      padding-bottom: $a50;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &.width2 {
+        width: $a1150;
+      }
+      .item {
+        width: 33%;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover {
+          &:before {
+            opacity: 0;
+          }
+        }
+        &:before {
+          top: 0;
+          left: 0;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.5);
+          transition: all 0.5s;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          display: block !important;
+        }
+      }
+      .ticket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: $a50;
+        .left {
+          display: flex;
+          align-items: flex-start;
+          .img {
+            position: relative;
+            z-index: 1;
+            img {
+              width: $a400;
+            }
+            .shadow {
+              position: absolute;
+              width: 100%;
+              height: 75%;
+              bottom: 5%;
+              right: 0;
+              transform: rotate(-5deg);
+              background: rgba(0,0,0,0.6);
+              z-index: -1;
+            }
+            &:nth-of-type(2) {
+              margin-left: -$a170;
+              margin-top: $a50;
+              .shadow {
+                height: 100%;
+                bottom: 0;
+              }
+            }
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: $a50;
+          padding-right: $a50;
+          position: relative;
+          z-index: 1;
+          p {
+            text-align: center;
+            font-family: 'VantaBold';
+            font-size: $a25;
+            line-height: $a30;
+            padding-bottom: $a10;
+            color: #f4f2e6;
+          }
+          .button {
+            width: $a400;
+            height: $a70;
+            font-size: $a20;
+            border-width: 3px;
+          }
+        }
+      }
+    }
+  }
+  .photo {
+    padding-top: $a150;
+    display: flex;
+    flex-flow: row wrap;
+    h2 {
+      padding-bottom: $a100;
+      width: 100%;
+    }
+    .item {
+      width: 25%;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 1200px) {
+  main .reviews .bg4 {
+    display: none;
+  }
+  main .reviews .container {
+    .slick-prev {
+      top: $a125;
+      right: calc(100% + #{$a20});
+      left: auto;
+      bottom: auto;
+      border: $a75 solid transparent;
+      border-right-color: #000;
+      border-left: 0;
+    }
+    .slick-next {
+      top: $a125;
+      left: calc(100% + #{$a20});
+      right: auto;
+      bottom: auto;
+      border: $a75 solid transparent;
+      border-left-color: #000;
+      border-right: 0;
+    }
+    .slick-next, .slick-prev {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0 !important;
+      height: 0 !important;
+      border-width: $m40;
+    }
+    .slick-next {
+      left: 92%;
+    }
+    .slick-prev {
+      right: 92%;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .shadow {
+        display: none;
+      }
+      img {
+        width: 80%;
+        will-change: transform;
+      }
+    }
+  }
+  main .famous .container .item {
+    width: 50%;
+    box-sizing: border-box;
+    &:before {
+      display: none;
+    }
+  }
+}

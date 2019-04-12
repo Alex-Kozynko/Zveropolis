@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'VantaPlain-Light';
+    src: url('VantaLightPlain.eot');
+    src: url('VantaLightPlain.eot?#iefix') format('embedded-opentype'),
+        url('VantaLightPlain.woff2') format('woff2'),
+        url('VantaLightPlain.woff') format('woff'),
+        url('VantaLightPlain.ttf') format('truetype'),
+        url('VantaLightPlain.svg#VantaLightPlain') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VantaBold';
+    src: url('VantaBold.eot');
+    src: url('VantaBold.eot?#iefix') format('embedded-opentype'),
+        url('VantaBold.woff2') format('woff2'),
+        url('VantaBold.woff') format('woff'),
+        url('VantaBold.ttf') format('truetype'),
+        url('VantaBold.svg#VantaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VantaPlain';
+    src: url('VantaPlain.eot');
+    src: url('VantaPlain.eot?#iefix') format('embedded-opentype'),
+        url('VantaPlain.woff2') format('woff2'),
+        url('VantaPlain.woff') format('woff'),
+        url('VantaPlain.ttf') format('truetype'),
+        url('VantaPlain.svg#VantaPlain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

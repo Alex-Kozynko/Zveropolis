@@ -1,0 +1,262 @@
+@import "pxTOvw";
+@import "jquery.fancybox.min";
+@import "all-page";
+@import "animate";
+@import "slick";
+@import "slick-theme";
+
+h3 {
+  font-size: $a40;
+  line-height: $a40;
+  font-family: 'VantaBold';
+  text-align: center;
+  white-space: pre-line;
+}
+
+main {
+  .animal {
+    padding-top: $a100;
+    box-shadow: 1px 0 2px #ccc;
+    position: relative;
+    padding-bottom: $a50;
+    .leaf-button {
+      position: absolute;
+      width: 58%;
+      bottom: -$a20;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .container {
+      padding-top: $a100;
+      .button {
+        margin: 0 auto;
+        background: $osn-col2;
+        margin-top: $a50;
+        position: relative;
+        z-index: 1;
+      }
+      .single-item {
+        .slick-prev {
+          top: $a125;
+          right: calc(100% + #{$a20});
+          left: auto;
+          bottom: auto;
+          border: $a75 solid transparent;
+          border-right-color: #000;
+          border-left: 0;
+        }
+        .slick-next {
+          top: $a125;
+          left: calc(100% + #{$a20});
+          right: auto;
+          bottom: auto;
+          border: $a75 solid transparent;
+          border-left-color: #000;
+          border-right: 0;
+        }
+        .item {
+          width: $a400;
+          margin-right: $a100;
+          .img {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+              .name, .bg {
+                opacity: 0;
+              }
+            }
+            img {
+              width: 100%;
+            }
+            .name {
+              color: #dcd7b4;
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              top: 0;
+              margin: auto;
+              transition: all 0.5s;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 1;
+            }
+            .bg {
+              background: rgba(0,0,0,0.5);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              transition: all 0.5s;
+            }
+          }
+          p {
+            font-size: $a30;
+            text-align: center;
+            padding-top: $a20;
+            text-transform: uppercase;
+          }
+          .button {
+            width: $a120;
+            border-width: 1px;
+            height: $a30;
+            font-size: $a16;
+            color: #333333;
+            margin-top: $a5;
+          }
+        }
+      }
+    }
+  }
+  .map {
+    padding-top: $a100;
+    padding-bottom: $a50;
+    background: #f4f2e6;
+    h3 {
+      padding-bottom: $a120;
+      z-index: 3;
+      position: relative;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin-bottom: $a50;
+        .single-item2 {
+          width: 70%;
+          z-index: 5;
+          .slick-prev {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: calc(100% + #{$a20});
+            left: auto;
+            border: $a75 solid transparent;
+            border-right-color: #000;
+            border-left: 0;
+          }
+          .slick-next {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: calc(100% + #{$a20});
+            right: auto;
+            border: $a75 solid transparent;
+            border-left-color: #000;
+            border-right: 0;
+          }
+        }
+        .map-img {
+          width: $a1000;
+          z-index: 2;
+        }
+        .bg {
+          width: 100%;
+          top: -$a190;
+          left: 0;
+          right: 0;
+          margin: auto;
+          position: absolute;
+          z-index: 1;
+        }
+        .bg2 {
+          position: absolute;
+          width: $a400;
+          left: 0;
+          bottom: -$a100;
+        }
+        .shadow {
+          background: rgba(0,0,0,0.8);
+          position: absolute;
+          height: 100%;
+          width: 70%;
+          left: 0;
+          right: $a50;
+          margin: auto;
+          top: $a30;
+          transform: rotate(-1deg);
+        }
+      }
+      p {
+        font-family: 'VantaBold';
+        font-size: $a19;
+        text-align: center;
+        line-height: $a30;
+        color: #333333;
+        padding-bottom: $a30;
+        position: relative;
+        z-index: 1;
+      }
+      .button {
+        width: $a330;
+        height: $a70;
+        color: $osn-col2;
+        background: #86776f;
+        font-size: $a28;
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 1200px){
+  main .animal {
+    .leaf-button {
+      width: 100%;
+      bottom: $m10;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: $m20;
+      .single-item {
+        width: $m210;
+        .slick-prev, .slick-next {
+          width: 0 !important;
+          height: 0 !important;
+          border-width: $m40;
+          top: $m56;
+        }
+        .item {
+          margin: 0 $m5;
+          .button {
+            width: 80% !important;
+            height: $m30 !important;
+          }
+        }
+      }
+    }
+  }
+  main .map {
+    padding-bottom: $m20;
+    .container {
+      p {
+        padding-top: $m20;
+      }
+      .img {
+        .single-item2 {
+          width: 100%;
+        }
+        .map-img {
+          width: 100%;
+        }
+        .shadow {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/animal.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+</head>
+<body>
+<h1>КОНТАКТНЫЙ ЗООПАРК
+		<div class="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</h1>
+//= include/footer_header.html
+
+<main>
+	<div class="animal">
+		<img src="/img/reason/leaf-button.png" alt="" class="leaf-button wow zoomInStroke">
+		<h2>НАШИ ОБИТАТЕЛИ ЗООПАРКА В КИЕВЕ</h2>
+		<div class="container width3">
+			<div class="single-item">
+				<div class="item">
+					<a href="#" class="img">
+						<img src="/img/slider/1.png" alt="">
+						<h2 class="name">САЙМИРИ</h2>
+						<div class="bg"></div>
+					</a>
+					<p class="name">САЙМИРИ</p>
+					<a href="#" class="button two">подробнее</a>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="/img/slider/1.png" alt="">
+						<h2 class="name">САЙМИРИ</h2>
+						<div class="bg"></div>
+					</a>
+					<p class="name">САЙМИРИ</p>
+					<a href="#" class="button two">подробнее</a>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="/img/slider/1.png" alt="">
+						<h2 class="name">САЙМИРИ</h2>
+						<div class="bg"></div>
+					</a>
+					<p class="name">САЙМИРИ</p>
+					<a href="#" class="button two">подробнее</a>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="/img/slider/1.png" alt="">
+						<h2 class="name">САЙМИРИ</h2>
+						<div class="bg"></div>
+					</a>
+					<p class="name">САЙМИРИ</p>
+					<a href="#" class="button two">подробнее</a>
+				</div>
+			</div>
+			<button href="#" data-fancybox="" class="button">КУПИТЬ БИЛЕТ СО СКИДКОЙ</button>
+		</div>
+	</div>
+	<div class="map">
+		<h3>Для вашего удобства, мы создали специальную карту нашего зоопарка,
+			с точным расположением всех вольеров каждого животного.</h3>
+		<div class="container width3">
+			<div class="img">
+				<div class="single-item2">
+					<div class="item">
+						<img src="/img/map/map.png" alt="" class="map-img" data-fancybox="" href="/img/map/map.png">
+					</div>
+					<div class="item">
+						<img src="/img/map/map.png" alt="" class="map-img" data-fancybox="" href="/img/map/map.png">
+					</div>
+				</div>
+				<img src="/img/map/bg.png" alt="" class="bg wow zoomIn">
+				<img src="/img/map/bg2.png" alt="" class="bg2 wow zoomIn">
+				<div class="shadow"></div>
+			</div>
+			<p>Вы можете скачать и сохранить эту PDF карту вольеров Зверополиса прямо себе на телефон,
+				чтобы удобно ориентироваться при посещении</p>
+			<a href="#" class="button">СКАЧАТЬ PDF</a>
+		</div>
+	</div>
+</main>
+
+//= include/footer_header.html
+
+//= include/script.html
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.single-item').slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 1199,
+					settings: {
+						slidesToShow: 1,
+						variableWidth: false,
+					}
+				}]
+		});
+		$('.single-item2').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 1199,
+					settings: {
+						slidesToShow: 1,
+						variableWidth: false,
+					}
+				}]
+		});
+	});
+</script>
+</body>
+</html>

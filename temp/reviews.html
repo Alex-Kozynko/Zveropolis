@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/reviews.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+</head>
+<body>
+<h1>КОНТАКТНЫЙ ЗООПАРК
+		<div class="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</h1>
+//= include/footer_header.html
+
+<main>
+	<div class="reviews">
+		<img src="/img/reviews/leaf1.png" alt="" class="bg1" data-parallax='{"y": 100}'>
+		<img src="/img/reviews/leaf2.png" alt="" class="bg2">
+		<img src="/img/reviews/leaf3.png" alt="" class="bg3">
+		<img src="/img/reviews/leaf4.png" alt="" class="bg4">
+		<img src="/img/reviews/leaf5.png" alt="" class="bg5"data-parallax='{"y": -100}'>
+		<h2>ЧТО ГОВОРЯТ О ЗВЕРОПОЛИСЕ
+			НАШИ ПОСЕТИТЕЛИ</h2>
+		<div class="container width3 single-item">
+			<div class="item">
+				<img src="/img/reviews/1.png" alt="">
+				<div class="shadow">
+
+				</div>
+			</div>
+			<div class="item">
+				<img src="/img/reviews/2.png" alt="">
+				<div class="shadow">
+
+				</div>
+			</div>
+			<div class="item">
+				<img src="/img/reviews/3.png" alt="">
+				<div class="shadow">
+
+				</div>
+			</div>
+			<div class="item">
+				<img src="/img/reviews/4.png" alt="">
+				<div class="shadow">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="famous">
+		<h3>ЗВЕЗДЫ И ПОПУЛЯРНЫЕ ЛИЧНОСТИ
+			ТОЖЕ ВЫБИРАЮТ НАШ ЗООПАРК :)</h3>
+		<div class="container width2">
+			<div class="item" data-fancybox="img" href="/img/famous/1.png"><img src="/img/famous/1.png" alt=""></div>
+			<div class="item" data-fancybox="img" href="/img/famous/2.png"><img src="/img/famous/2.png" alt=""></div>
+			<div class="item" data-fancybox="img" href="/img/famous/1.png"><img src="/img/famous/1.png" alt=""></div>
+			<div class="item" data-fancybox="img" href="/img/famous/2.png"><img src="/img/famous/2.png" alt=""></div>
+			<div class="item" data-fancybox="img" href="/img/famous/1.png"><img src="/img/famous/1.png" alt=""></div>
+			<div class="item" data-fancybox="img" href="/img/famous/2.png"><img src="/img/famous/2.png" alt=""></div>
+		</div>
+		<div class="container width3">
+			<div class="ticket">
+				<img src="/img/price/4.png" alt="" class="bg4 wow zoomIn">
+				<img src="/img/price/6.png" alt="" class="bg6 wow zoomIn">
+				<div class="left">
+					<div class="img">
+						<img src="/img/price/ticket.png" alt="">
+						<div class="shadow"></div>
+					</div>
+					<div class="img">
+						<img src="/img/price/ticket2.png" alt="">
+						<div class="shadow"></div>
+					</div>
+				</div>
+				<div class="right">
+					<p>Будьте в тренде и вы!
+						Приходите в Зверополис</p>
+					<button class="button two">КУПИТЬ БИЛЕТ СО СКИДКОЙ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="photo">
+		<h2>ЕЩЕ БОЛЬШЕ ФОТОГРАФИЙ ИЗНУТРИ</h2>
+		<div class="item"><img src="/img/photo/1.png" alt="" data-fancybox="img" href="/img/photo/1.png"></div>
+		<div class="item"><img src="/img/photo/2.png" alt="" data-fancybox="img" href="/img/photo/2.png"></div>
+		<div class="item"><img src="/img/photo/3.png" alt="" data-fancybox="img" href="/img/photo/3.png"></div>
+		<div class="item"><img src="/img/photo/4.png" alt="" data-fancybox="img" href="/img/photo/4.png"></div>
+		<div class="item"><img src="/img/photo/5.png" alt="" data-fancybox="img" href="/img/photo/5.png"></div>
+		<div class="item"><img src="/img/photo/6.png" alt="" data-fancybox="img" href="/img/photo/6.png"></div>
+		<div class="item"><img src="/img/photo/7.png" alt="" data-fancybox="img" href="/img/photo/7.png"></div>
+		<div class="item"><img src="/img/photo/8.png" alt="" data-fancybox="img" href="/img/photo/8.png"></div>
+	</div>
+</main>
+//= include/footer_header.html
+
+//= include/script.html
+<script type="text/javascript">
+	$(document).ready(function() {
+		if($(window).width() < 1200) {
+			$('.single-item').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				variableWidth: true,
+				responsive: [
+					{
+						breakpoint: 1199,
+						settings: {
+							slidesToShow: 1,
+							variableWidth: false,
+						}
+					}]
+			});
+		}
+	});
+</script>
+</body>
+</html>
